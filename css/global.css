@@ -1,0 +1,38 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  /*background: linear-gradient(#e2ebf0, #cfd9df) no-repeat;*/
+  font-family: "微软雅黑";
+  background: #F2F4F3;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.layout-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  /*background: rgba(230, 230, 230, .4);*/
+}
+
+/*# sourceMappingURL=global.css.map */

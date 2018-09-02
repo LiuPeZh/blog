@@ -1,0 +1,205 @@
+@charset "UTF-8";
+.main-container {
+  position: relative;
+  width: 1140px;
+  margin: 64px auto;
+}
+
+.main-list {
+  width: 840px;
+  float: left;
+}
+.main-list .item-container.thumbnail {
+  height: 178px;
+}
+.main-list .item-container.thumbnail .summary-cnt {
+  height: 108px;
+}
+.main-list .item-container.thumbnail .summary-cnt .img-wrap {
+  float: left;
+  padding: 2px 8px;
+}
+.main-list .item-container.thumbnail .summary-cnt .summary-img {
+  width: 148px;
+  height: 98px;
+}
+.main-list .item-container {
+  position: relative;
+  height: 114px;
+  margin-bottom: 32px;
+  padding: 16px 22px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  transition: all 0.4s;
+}
+.main-list .item-container:hover {
+  box-shadow: 3px 3px 8px rgba(26, 26, 26, 0.3);
+}
+.main-list .item-container .summary .summary-title {
+  position: relative;
+  height: 22px;
+  padding-left: 8px;
+  margin-bottom: 12px;
+  color: #2d2d2d;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.main-list .item-container .summary .summary-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background: #4d4d4d;
+  left: 0;
+  top: 0;
+}
+.main-list .item-container .summary-cnt {
+  overflow: hidden;
+  height: 50px;
+  color: #7a7a7a;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+.main-list .item-container .summary-cnt a {
+  color: #68bde1;
+  cursor: pointer;
+}
+.main-list .item-container .cnt-msg {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-list .item-container .cnt-msg .segment {
+  display: flex;
+  font-size: 12px;
+}
+.main-list .item-container .cnt-msg .segment ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.main-list .item-container .cnt-msg .segment ul li {
+  margin: 0 6px;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+.main-list .item-container .cnt-msg .segment ul li:hover {
+  color: #7a7a7a;
+}
+.main-list .item-container .cnt-msg .segment ul li .i-reply {
+  padding-right: 6px;
+}
+.main-list .item-container .cnt-msg .tag {
+  color: #aaa;
+}
+.main-list .item-container .cnt-msg .tag li:hover {
+  color: #8a8a8a;
+}
+.main-list .item-container .cnt-msg .record {
+  color: #bbb;
+}
+
+#back-top {
+  display: none;
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  margin-left: 920px;
+  background: linear-gradient(#fff, #ddd);
+  border: 1px solid #d3d4d5;
+  border-radius: 6px;
+  bottom: 80px;
+  box-shadow: 0 4px 3px -3px #7a7a7a;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+#back-top:hover {
+  background: linear-gradient(#f1f1f1, #ddd);
+}
+#back-top:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+#back-top span {
+  line-height: 48px;
+  font-size: 24px;
+}
+
+.sider-container {
+  margin-left: 920px;
+  width: 220px;
+  height: 480px;
+  background: rgba(230, 230, 230, 0.6);
+}
+.sider-container .touxiang {
+  position: relative;
+  height: 220px;
+  padding: 12px;
+  line-height: 220px;
+  text-align: center;
+}
+.sider-container .touxiang img {
+  display: inline-block;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sider-container .my-msg {
+  padding-bottom: 24px;
+  text-align: center;
+}
+.sider-container .my-msg .my-name {
+  font: 16px/1.5 200 Arial;
+  color: #ccc;
+}
+.sider-container .my-msg .my-sign {
+  padding: 16px 12px;
+}
+.sider-container .my-msg .my-sign .big-quote {
+  position: relative;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+.sider-container .my-msg .my-sign .big-quote::before, .sider-container .my-msg .my-sign .big-quote::after {
+  display: inline-block;
+  position: absolute;
+  font-size: 28px;
+}
+.sider-container .my-msg .my-sign .big-quote::before {
+  content: "“";
+  top: -8px;
+  left: -4px;
+}
+.sider-container .my-msg .my-sign .big-quote::after {
+  content: "”";
+  bottom: -10px;
+  right: 14px;
+}
+.sider-container .outer-link .link-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sider-container .outer-link .link-list li {
+  height: 24px;
+  margin: 0 6px;
+}
+.sider-container .outer-link .link-list li span {
+  font-size: 18px;
+}
+.sider-container .outer-link .link-list li span:hover {
+  color: #9a9a9a;
+}
+
+.l-fixed {
+  position: fixed;
+  margin-top: -140px;
+}
+
+/*# sourceMappingURL=main.css.map */

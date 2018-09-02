@@ -1,0 +1,109 @@
+.header-items {
+  min-width: 1140px;
+  background: #555358;
+  color: #FFEDDF;
+}
+.header-items .nav-container {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 1140px;
+  height: 140px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.header-items .nav-container .nav {
+  display: flex;
+}
+.header-items .nav-container .nav .nav-list {
+  position: relative;
+  padding: 0 22px;
+  font-size: 22px;
+  line-height: 40px;
+}
+.header-items .nav-container .nav .nav-list > span {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.header-items .nav-container .nav .nav-list > span:hover {
+  color: #D69F7E;
+}
+.header-items .nav-container .nav .nav-list > span .arrow {
+  font-size: 12px;
+  padding: 0 6px;
+}
+.header-items .nav-container .nav .nav-list .nav-dropdown {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  min-width: 90px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 4px;
+  top: 40px;
+}
+.header-items .nav-container .nav .nav-list .nav-dropdown li {
+  height: 28px;
+  padding: 2px;
+  box-shadow: 0 1px 1px -1px #aaa;
+  line-height: 28px;
+  font-size: 22px;
+  color: #aaa;
+  cursor: pointer;
+}
+.header-items .nav-container .nav .nav-list .nav-dropdown li:hover {
+  background: #e3e4e5;
+}
+.header-items .nav-container .nav .nav-list .nav-dropdown.drop {
+  display: block;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+.header-items .nav-container .search-bar input {
+  display: inline-block;
+  width: 206px;
+  border: none;
+  outline: none;
+  background: transparent;
+  vertical-align: middle;
+  color: #D9D9D9;
+  font-size: 18px;
+  line-height: 40px;
+  transition: all 0.6s ease-in-out;
+}
+.header-items .nav-container .search-bar input::placeholder {
+  color: #898952;
+}
+.header-items .nav-container .search-bar input:focus + .i-search::before {
+  color: #D9D9D9;
+}
+.header-items .nav-container .search-bar .i-search::before {
+  color: #898952;
+  vertical-align: middle;
+  transition: color 0.4s ease-in-out;
+}
+.header-items .nav-container .search-bar .search-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+.header-items .nav-container .search-bar .search-icon:hover::before {
+  color: #D9D9D9;
+}
+
+.current-item {
+  color: #D69F7E;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
